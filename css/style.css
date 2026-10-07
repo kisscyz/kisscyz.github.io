@@ -495,14 +495,13 @@ body.page-blue .photo {
 .tl-item h3 { font-size: 17.5px; margin-bottom: 6px; }
 .tl-item p { color: var(--muted); font-size: 14.5px; }
 
-/* ---------- 通用内页顶部（同步首页：蓝条导航 + banner 图） ---------- */
-.page-top { position: relative; overflow: hidden; background: #0a45a5; }
-.page-top::before { content: ""; position: absolute; inset: 0; background: var(--pb) center / cover no-repeat; }
-.page-top::after { content: ""; position: absolute; inset: 0; pointer-events: none;
-  background: linear-gradient(180deg, rgba(10,69,165,.62), rgba(10,69,165,.16) 45%, rgba(10,69,165,.42)); }
-.page-top .site-header { position: relative; z-index: 2; }
-.page-banner { position: relative; z-index: 1; }
-.page-banner-inner { padding: 42px 22px 58px; }
+/* ---------- 通用内页顶部（同步首页：蓝条导航 + banner 图只在下方） ---------- */
+.page-top { background: linear-gradient(120deg, #1877F2 0%, #0f63dd 55%, #0a45a5 100%); }
+.page-banner { position: relative; overflow: hidden;
+  background: var(--pb) center / cover no-repeat, #0a45a5; }
+.page-banner::after { content: ""; position: absolute; inset: 0; pointer-events: none;
+  background: linear-gradient(180deg, rgba(10,69,165,.35), rgba(10,69,165,.08) 50%, rgba(10,69,165,.45)); }
+.page-banner-inner { position: relative; z-index: 1; padding: 42px 22px 58px; }
 .page-banner-inner h1 { color: #fff; font-size: clamp(26px, 3.4vw, 36px); letter-spacing: 3px;
   text-shadow: 0 3px 16px rgba(0,0,0,.4); margin-bottom: 8px; }
 .page-banner-inner p { color: rgba(255,255,255,.88); font-size: 14.5px; letter-spacing: 1px; }
