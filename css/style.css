@@ -170,7 +170,7 @@ a { color: inherit; text-decoration: none; }
   background: transparent; border: none; box-shadow: none;
   -webkit-backdrop-filter: none; backdrop-filter: none;
 }
-.site-header.solid .header-inner { max-width: 1180px; margin: 0 auto; padding-top: 16px; padding-bottom: 16px; }
+.site-header.solid .header-inner { max-width: 1180px; margin: 0 auto; padding: 16px 22px; }
 .site-header.solid .logo-text { color: #fff; }
 .site-header.solid .logo-mark { background: transparent; border: none; box-shadow: none; color: #fff; }
 .site-header.solid .main-nav a { color: rgba(255,255,255,.9); }
