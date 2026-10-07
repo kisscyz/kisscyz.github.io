@@ -133,4 +133,25 @@
   /* ---------- 页脚年份 ---------- */
   var year = document.getElementById("year");
   if (year) year.textContent = new Date().getFullYear();
+
+  /* ---------- 轻提示（上传照片等纯静态占位） ---------- */
+  var toastTimer = null;
+  function showToast(msg) {
+    var t = document.getElementById("toast");
+    if (!t) {
+      t = document.createElement("div");
+      t.id = "toast";
+      document.body.appendChild(t);
+    }
+    t.textContent = msg;
+    t.classList.add("show");
+    clearTimeout(toastTimer);
+    toastTimer = setTimeout(function () { t.classList.remove("show"); }, 2400);
+  }
+  var uploadFab = document.getElementById("uploadFab");
+  if (uploadFab) {
+    uploadFab.addEventListener("click", function () {
+      showToast("纯静态站点：把照片放进 images/album/ 目录即可展示");
+    });
+  }
 })();

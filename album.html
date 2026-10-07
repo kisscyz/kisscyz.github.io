@@ -7,10 +7,11 @@
 <meta name="description" content="用照片记录旅程与时刻——旅拍、城市、自然、人文。">
 <link rel="stylesheet" href="css/style.css">
 </head>
-<body data-page="album">
+<body data-page="album" class="page-blue">
 
-<header class="site-header glass">
-  <div class="header-inner">
+<!-- ================= 蓝色导航（贴渲染图） ================= -->
+<header class="site-header solid">
+  <div class="wrap header-inner">
     <a class="logo" href="index.html"><span class="logo-mark">拾</span><span class="logo-text">拾光小站</span></a>
     <nav class="main-nav" id="mainNav">
       <a href="index.html" data-nav="index">首页</a>
@@ -34,7 +35,7 @@
     </div>
   </div>
   <div class="search-bar" id="searchBar">
-    <div class="search-inner">
+    <div class="wrap search-inner">
       <input id="searchInput" type="text" placeholder="搜索文章、相册、百宝箱…">
       <div class="search-results" id="searchResults"></div>
     </div>
@@ -42,73 +43,77 @@
 </header>
 
 <div class="wrap">
-  <section class="page-hero glass">
-    <h1>相册 · 光影留存</h1>
-    <p>用照片记录旅程与时刻 · 共 127 张光影 · 6 个相册</p>
-    <!-- 占位图说明：下方所有照片均来自 picsum.photos 随机图。
-         替换方法：把 img 的 src 换成你自己的图片地址（如 images/xxx.jpg），
-         建议把照片放在 images/ 目录下，见 README.md -->
-  </section>
-
-  <div class="tabs">
-    <button class="tab active" data-filter="all">全部</button>
-    <button class="tab" data-filter="travel">旅拍</button>
-    <button class="tab" data-filter="city">城市</button>
-    <button class="tab" data-filter="nature">自然</button>
-    <button class="tab" data-filter="people">人文</button>
+  <!-- 标题 + 筛选同一行 -->
+  <div class="album-head">
+    <div class="album-title">
+      <h1>相册 · 光影留存</h1>
+      <p>用照片记录旅程与时刻 · 共 127 张光影 · 6 个相册</p>
+    </div>
+    <div class="tabs">
+      <button class="tab active" data-filter="all">全部</button>
+      <button class="tab" data-filter="spring">春季</button>
+      <button class="tab" data-filter="travel">旅拍</button>
+      <button class="tab" data-filter="city">城市</button>
+      <button class="tab" data-filter="nature">自然</button>
+      <button class="tab" data-filter="people">人文</button>
+    </div>
   </div>
 
+  <!-- 占位图说明：前 6 张为渲染图裁出，其余来自 picsum.photos。
+       替换方法：把 img 的 src 换成 images/album/xxx.jpg，见 README.md -->
   <div class="masonry">
     <figure class="photo glass" data-cat="nature">
-      <img loading="lazy" src="https://picsum.photos/seed/pick-jiuzhai/600/760" alt="九寨沟">
-      <figcaption class="cap"><b>📍 九寨沟 · 碧水叠瀑</b><span>23张 · 2024年4月</span></figcaption>
+      <img loading="lazy" src="images/album/jiuzhai.jpg" alt="九寨沟">
+      <figcaption class="cap"><b>📍 九寨沟 · 碧水叠瀑</b><div class="cap-meta"><span>23张 · 2024年4月10日</span><span class="like">♥ 128</span></div></figcaption>
     </figure>
     <figure class="photo glass" data-cat="city">
-      <img loading="lazy" src="https://picsum.photos/seed/pick-shanghai/600/500" alt="上海外滩">
-      <figcaption class="cap"><b>📍 上海 · 外滩夜色</b><span>18张 · 2024年4月</span></figcaption>
+      <img loading="lazy" src="images/album/shanghai.jpg" alt="上海外滩">
+      <figcaption class="cap"><b>上海 · 外滩夜色</b><div class="cap-meta"><span>18张 · 2024年4月08日</span><span class="like">♥ 128</span></div></figcaption>
+    </figure>
+    <figure class="photo glass" data-cat="spring">
+      <img loading="lazy" src="images/album/kyoto.jpg" alt="京都">
+      <figcaption class="cap"><b>京都 · 樱道晚照</b><div class="cap-meta"><span>32张 · 2024年4月05日</span><span class="like">♥ 128</span></div></figcaption>
+    </figure>
+    <figure class="photo glass" data-cat="travel">
+      <img loading="lazy" src="images/album/dunhuang.jpg" alt="敦煌">
+      <figcaption class="cap"><b>敦煌 · 鸣沙月泉</b><div class="cap-meta"><span>15张 · 2024年4月02日</span><span class="like">♥ 158</span></div></figcaption>
+    </figure>
+    <figure class="photo glass" data-cat="nature">
+      <img loading="lazy" src="images/album/zhangjiajie.jpg" alt="张家界">
+      <figcaption class="cap"><b>张家界 · 云雾林瀑</b><div class="cap-meta"><span>21张 · 2024年3月28日</span><span class="like">♥ 128</span></div></figcaption>
+    </figure>
+    <figure class="photo glass" data-cat="travel">
+      <img loading="lazy" src="images/album/xiamen.jpg" alt="厦门">
+      <figcaption class="cap"><b>厦门 · 鼓浪屿海崖</b><div class="cap-meta"><span>18张 · 2024年3月20日</span><span class="like">♥ 128</span></div></figcaption>
+    </figure>
+    <figure class="photo glass" data-cat="travel">
+      <img loading="lazy" src="https://picsum.photos/seed/pick-norway/600/375" alt="挪威峡湾">
+      <figcaption class="cap"><b>📍 挪威 · 峡湾极光</b><div class="cap-meta"><span>26张 · 2024年3月</span><span class="like">♥ 96</span></div></figcaption>
+    </figure>
+    <figure class="photo glass" data-cat="city">
+      <img loading="lazy" src="https://picsum.photos/seed/pick-chengdu/600/375" alt="成都">
+      <figcaption class="cap"><b>📍 成都 · 宽窄巷子</b><div class="cap-meta"><span>12张 · 2024年2月</span><span class="like">♥ 64</span></div></figcaption>
     </figure>
     <figure class="photo glass" data-cat="people">
-      <img loading="lazy" src="https://picsum.photos/seed/pick-kyoto/600/680" alt="京都">
-      <figcaption class="cap"><b>📍 京都 · 樱道晚照</b><span>32张 · 2024年4月</span></figcaption>
+      <img loading="lazy" src="https://picsum.photos/seed/pick-lijiang/600/375" alt="丽江">
+      <figcaption class="cap"><b>📍 丽江 · 古城人家</b><div class="cap-meta"><span>19张 · 2024年1月</span><span class="like">♥ 88</span></div></figcaption>
     </figure>
     <figure class="photo glass" data-cat="nature">
-      <img loading="lazy" src="https://picsum.photos/seed/pick-dunhuang/600/520" alt="敦煌">
-      <figcaption class="cap"><b>📍 敦煌 · 鸣沙月泉</b><span>15张 · 2024年4月</span></figcaption>
+      <img loading="lazy" src="https://picsum.photos/seed/pick-hulunbuir/600/375" alt="呼伦贝尔">
+      <figcaption class="cap"><b>📍 呼伦贝尔 · 草原晨雾</b><div class="cap-meta"><span>14张 · 2023年12月</span><span class="like">♥ 72</span></div></figcaption>
     </figure>
-    <figure class="photo glass" data-cat="nature">
-      <img loading="lazy" src="https://picsum.photos/seed/pick-zhangjiajie/600/740" alt="张家界">
-      <figcaption class="cap"><b>📍 张家界 · 云雾林瀑</b><span>21张 · 2024年3月</span></figcaption>
+    <figure class="photo glass" data-cat="spring">
+      <img loading="lazy" src="https://picsum.photos/seed/pick-yunnan2/600/375" alt="云南大理">
+      <figcaption class="cap"><b>📍 大理 · 洱海日出</b><div class="cap-meta"><span>22张 · 2024年1月</span><span class="like">♥ 118</span></div></figcaption>
     </figure>
-    <figure class="photo glass" data-cat="travel">
-      <img loading="lazy" src="https://picsum.photos/seed/pick-xiamen/600/540" alt="厦门">
-      <figcaption class="cap"><b>📍 厦门 · 鼓浪屿海崖</b><span>18张 · 2024年3月</span></figcaption>
-    </figure>
-    <figure class="photo glass" data-cat="travel">
-      <img loading="lazy" src="https://picsum.photos/seed/pick-norway/600/700" alt="挪威峡湾">
-      <figcaption class="cap"><b>📍 挪威 · 峡湾极光</b><span>26张 · 2024年3月</span></figcaption>
-    </figure>
-    <figure class="photo glass" data-cat="city">
-      <img loading="lazy" src="https://picsum.photos/seed/pick-chengdu/600/560" alt="成都">
-      <figcaption class="cap"><b>📍 成都 · 宽窄巷子</b><span>12张 · 2024年2月</span></figcaption>
-    </figure>
-    <figure class="photo glass" data-cat="people">
-      <img loading="lazy" src="https://picsum.photos/seed/pick-lijiang/600/620" alt="丽江">
-      <figcaption class="cap"><b>📍 丽江 · 古城人家</b><span>19张 · 2024年1月</span></figcaption>
-    </figure>
-    <figure class="photo glass" data-cat="nature">
-      <img loading="lazy" src="https://picsum.photos/seed/pick-hulunbuir/600/580" alt="呼伦贝尔">
-      <figcaption class="cap"><b>📍 呼伦贝尔 · 草原晨雾</b><span>14张 · 2023年12月</span></figcaption>
-    </figure>
-    <figure class="photo glass" data-cat="travel">
-      <img loading="lazy" src="https://picsum.photos/seed/pick-yunnan2/600/660" alt="云南大理">
-      <figcaption class="cap"><b>📍 大理 · 洱海日出</b><span>22张 · 2024年1月</span></figcaption>
-    </figure>
-    <figure class="photo glass" data-cat="city">
-      <img loading="lazy" src="https://picsum.photos/seed/pick-hangzhou/600/520" alt="杭州西湖">
-      <figcaption class="cap"><b>📍 杭州 · 西湖雨后</b><span>16张 · 2024年4月</span></figcaption>
+    <figure class="photo glass" data-cat="spring">
+      <img loading="lazy" src="https://picsum.photos/seed/pick-hangzhou/600/375" alt="杭州西湖">
+      <figcaption class="cap"><b>📍 杭州 · 西湖雨后</b><div class="cap-meta"><span>16张 · 2024年4月</span><span class="like">♥ 102</span></div></figcaption>
     </figure>
   </div>
 </div>
+
+<button class="upload-fab" id="uploadFab">⊕ 上传照片</button>
 
 <footer class="site-footer glass wrap">
   <nav class="fnav">
