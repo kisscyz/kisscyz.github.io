@@ -63,6 +63,12 @@
   background: rgba(18, 34, 62, 0.72);
   border-color: rgba(120, 170, 255, 0.3);
 }
+/* 导航条深色跟随 */
+[data-theme="dark"] .blue-top,
+[data-theme="dark"] .page-top,
+[data-theme="dark"] .travel-top {
+  background: linear-gradient(120deg, #0e3a8f 0%, #0a2c6e 55%, #071e52 100%);
+}
 
 * { box-sizing: border-box; margin: 0; padding: 0; }
 
