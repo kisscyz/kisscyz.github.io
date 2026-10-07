@@ -36,6 +36,34 @@
   --fb-soft: rgba(24, 119, 242, 0.22);
 }
 
+/* 深色模式补齐：硬编码浅色组件 */
+[data-theme="dark"] .search-inner input { background: rgba(18, 34, 62, 0.72); }
+[data-theme="dark"] .album-panel {
+  background: rgba(18, 34, 62, 0.45);
+  border-color: rgba(120, 170, 255, 0.25);
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.45), inset 0 1px 0 rgba(120, 170, 255, 0.15);
+}
+[data-theme="dark"] .album-panel .tab {
+  background: rgba(120, 170, 255, 0.12);
+  border-color: rgba(120, 170, 255, 0.25);
+  color: #8fbef7;
+}
+[data-theme="dark"] .album-panel .tab:hover { background: rgba(120, 170, 255, 0.22); color: #fff; }
+[data-theme="dark"] body.page-blue .photo {
+  background: rgba(18, 34, 62, 0.66);
+  border-color: rgba(120, 170, 255, 0.22);
+}
+[data-theme="dark"] body.page-blue {
+  background:
+    linear-gradient(rgba(6, 15, 32, 0.62), rgba(6, 15, 32, 0.62)),
+    url("../images/album/page-bg.jpg") center top / cover no-repeat,
+    linear-gradient(150deg, #0e2a5c 0%, #0a1f4d 45%, #071738 100%);
+}
+[data-theme="dark"] .upload-fab {
+  background: rgba(18, 34, 62, 0.72);
+  border-color: rgba(120, 170, 255, 0.3);
+}
+
 * { box-sizing: border-box; margin: 0; padding: 0; }
 
 html { scroll-behavior: smooth; }
