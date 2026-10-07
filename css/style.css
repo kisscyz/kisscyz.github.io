@@ -159,22 +159,46 @@ a { color: inherit; text-decoration: none; }
 }
 .btn.sm { padding: 8px 20px; font-size: 13.5px; }
 
-/* ---------- 首页蓝色 Banner（独立通栏） ---------- */
-.hero-blue {
+/* ---------- 首页蓝色通栏（导航 + Banner，贴渲染图） ---------- */
+.blue-top {
   background: linear-gradient(120deg, #1877F2 0%, #0f63dd 55%, #0a45a5 100%);
   position: relative; overflow: hidden;
-  margin: 26px 0 10px;
 }
-.hero-blue::before {
+.blue-top::before {
   content: ""; position: absolute; inset: 0; pointer-events: none;
   background:
     radial-gradient(700px 320px at 85% 20%, rgba(255,255,255,.14), transparent 60%),
     radial-gradient(500px 260px at 10% 90%, rgba(255,255,255,.08), transparent 60%);
 }
-.hero-blue-inner {
-  display: grid; grid-template-columns: 1fr 1.35fr; gap: 44px; align-items: center;
-  padding-top: 42px; padding-bottom: 52px; position: relative; z-index: 1;
+/* 蓝条上的实色导航 */
+.site-header.solid {
+  position: relative; z-index: 2; max-width: none; margin: 0; border-radius: 0;
+  background: transparent; border: none; box-shadow: none;
+  -webkit-backdrop-filter: none; backdrop-filter: none;
 }
+.site-header.solid .header-inner { max-width: 1180px; margin: 0 auto; padding-top: 16px; padding-bottom: 16px; }
+.site-header.solid .logo-text { color: #fff; }
+.site-header.solid .logo-mark { background: rgba(255,255,255,.22); border: 1px solid rgba(255,255,255,.45); box-shadow: none; }
+.site-header.solid .main-nav a { color: rgba(255,255,255,.9); }
+.site-header.solid .main-nav a:hover { background: rgba(255,255,255,.18); color: #fff; }
+.site-header.solid .main-nav a.active { background: #fff; color: var(--fb); box-shadow: 0 6px 14px rgba(0,0,0,.2); }
+.site-header.solid .icon-btn { background: rgba(255,255,255,.16); border-color: rgba(255,255,255,.35); color: #fff; box-shadow: none; }
+.site-header.solid .avatar { border-color: rgba(255,255,255,.55); }
+.site-header.solid .search-bar.open { border-top-color: rgba(255,255,255,.25); }
+.site-header.solid .search-inner input { background: rgba(255,255,255,.94); }
+/* Banner：山水图右置，与蓝底羽化融合 */
+.hero-blue { position: relative; z-index: 1; overflow: hidden; }
+.hero-blue-bg {
+  position: absolute; top: 0; right: 0; bottom: 0; width: 66%;
+  -webkit-mask-image: linear-gradient(90deg, transparent 0, #000 24%);
+  mask-image: linear-gradient(90deg, transparent 0, #000 24%);
+}
+.hero-blue-bg img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.hero-blue-bg::after {
+  content: ""; position: absolute; inset: 0;
+  background: linear-gradient(90deg, rgba(15,99,221,.5), rgba(15,99,221,0) 42%);
+}
+.hero-blue-inner { position: relative; z-index: 1; padding-top: 58px; padding-bottom: 66px; max-width: 640px; }
 .hero-blue-text h1 {
   color: #fff; font-size: clamp(30px, 4.2vw, 44px); line-height: 1.4;
   letter-spacing: 2px; margin-bottom: 14px; text-shadow: 0 3px 16px rgba(0,0,0,.35);
@@ -186,12 +210,6 @@ a { color: inherit; text-decoration: none; }
   border: 1px solid rgba(255,255,255,.5);
   -webkit-backdrop-filter: blur(10px); backdrop-filter: blur(10px);
   box-shadow: 0 8px 20px rgba(0,0,0,.22), inset 0 1px 0 rgba(255,255,255,.35);
-}
-.hero-blue-img img {
-  width: 100%; height: 300px; object-fit: cover; border-radius: 20px;
-  box-shadow: 0 24px 60px rgba(0,0,0,.35);
-  -webkit-mask-image: linear-gradient(90deg, transparent 0, #000 10%);
-  mask-image: linear-gradient(90deg, transparent 0, #000 10%);
 }
 
 /* ---------- 最新文章三列 ---------- */
@@ -413,9 +431,9 @@ a { color: inherit; text-decoration: none; }
   .sidebar { position: static; }
   .post-grid { grid-template-columns: 1fr; }
   .post-card.wide { grid-template-columns: 1fr; }
-  .hero-blue-inner { grid-template-columns: 1fr; gap: 24px; padding-top: 30px; padding-bottom: 40px; }
-  .hero-blue-img img { height: 220px;
+  .hero-blue-bg { position: relative; width: 100%; height: 220px;
     -webkit-mask-image: none; mask-image: none; }
+  .hero-blue-inner { padding-top: 30px; padding-bottom: 40px; max-width: none; }
   .treasure-banner-inner { grid-template-columns: 1fr; gap: 20px; text-align: center; padding-top: 32px; padding-bottom: 40px; }
   .treasure-chest { width: 130px; margin: 0 auto; }
   .treasure-stats { grid-template-columns: repeat(3, 1fr); min-width: 0; }
@@ -434,6 +452,12 @@ a { color: inherit; text-decoration: none; }
   .main-nav a { padding: 12px 16px; }
   .hamburger { display: grid; }
   .site-header { top: 8px; }
+  .site-header.solid .main-nav {
+    background: rgba(10, 60, 140, 0.95);
+    border-color: rgba(255,255,255,.25);
+  }
+  .site-header.solid .main-nav a { color: rgba(255,255,255,.92); }
+  .site-header.solid .main-nav a.active { background: #fff; color: var(--fb); }
   .article-hero img { height: 240px; }
   .article-body { padding: 24px 20px; }
   .masonry { grid-template-columns: 1fr; }
