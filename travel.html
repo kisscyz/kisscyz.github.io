@@ -5,86 +5,119 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>冰川极光：七日挪威峡湾徒步纪实 · 拾光小站</title>
 <meta name="description" content="七日挪威峡湾徒步，追极光、走冰川的完整纪实。">
-<link rel="stylesheet" href="css/style.css?v=8">
+<link rel="stylesheet" href="css/style.css?v=9">
 </head>
 <body data-page="travel">
 
-<header class="site-header">
-  <div class="header-inner">
-    <a class="logo" href="index.html"><span class="logo-mark">拾</span><span class="logo-text">拾光小站</span></a>
-    <nav class="main-nav" id="mainNav">
-      <a href="index.html" data-nav="index">首页</a>
-      <a href="travel.html" data-nav="travel">游记</a>
-      <a href="essays.html" data-nav="essays">随笔</a>
-      <a href="album.html" data-nav="album">相册</a>
-      <a href="treasure.html" data-nav="treasure">百宝箱</a>
-      <a href="records.html" data-nav="records">记录</a>
-    </nav>
-    <div class="header-actions">
-      <button class="icon-btn" id="searchBtn" aria-label="搜索">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>
-      </button>
-      <button class="icon-btn" id="themeBtn" aria-label="切换深浅色">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
-      </button>
-      <span class="avatar" title="博主">拾</span>
-      <button class="icon-btn hamburger" id="hamburger" aria-label="菜单">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
-      </button>
-    </div>
+<!-- 顶部：导航同步首页风格（透明白字）+ 极光 Banner -->
+<div class="travel-top">
+  <div class="travel-hero-bg">
+    <img src="images/travel/hero-aurora.jpg" alt="挪威峡湾极光">
   </div>
-  <div class="search-bar" id="searchBar">
-    <div class="search-inner">
-      <input id="searchInput" type="text" placeholder="搜索文章、相册、百宝箱…">
-      <div class="search-results" id="searchResults"></div>
+  <header class="site-header solid">
+    <div class="header-inner">
+      <a class="logo" href="index.html"><span class="logo-mark">拾</span><span class="logo-text">拾光小站</span></a>
+      <nav class="main-nav" id="mainNav">
+        <a href="index.html" data-nav="index">首页</a>
+        <a href="travel.html" data-nav="travel">游记</a>
+        <a href="essays.html" data-nav="essays">随笔</a>
+        <a href="album.html" data-nav="album">相册</a>
+        <a href="treasure.html" data-nav="treasure">百宝箱</a>
+        <a href="records.html" data-nav="records">记录</a>
+      </nav>
+      <div class="header-actions">
+        <button class="icon-btn" id="searchBtn" aria-label="搜索">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>
+        </button>
+        <button class="icon-btn" id="themeBtn" aria-label="切换深浅色">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+        </button>
+        <span class="avatar" title="博主">拾</span>
+        <button class="icon-btn hamburger" id="hamburger" aria-label="菜单">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+        </button>
+      </div>
     </div>
-  </div>
-</header>
+    <div class="search-bar" id="searchBar">
+      <div class="search-inner">
+        <input id="searchInput" type="text" placeholder="搜索文章、相册、百宝箱…">
+        <div class="search-results" id="searchResults"></div>
+      </div>
+    </div>
+  </header>
 
-<div class="wrap">
-
-  <!-- 顶部大图 Hero -->
-  <section class="article-hero glass">
-    <!-- 占位图：替换为你自己的游记头图 -->
-    <img src="https://picsum.photos/seed/pick-aurora-hero/1400/520" alt="挪威峡湾极光">
-    <div class="overlay">
+  <section class="travel-hero">
+    <div class="wrap travel-hero-inner">
       <h1>冰川极光：七日挪威峡湾徒步纪实</h1>
-      <div class="meta">
+      <p class="sub">星空极光 · 峡湾徒步 · 冰川露营 ｜ 2024年3月 · 北欧冬季探险</p>
+      <div class="hero-pills">
         <span>📅 2024年3月15日 · 12 min 阅读</span>
         <span>📍 挪威 · 吕瑟峡湾</span>
         <span>🏷 极光 · 徒步 · 游记</span>
       </div>
     </div>
   </section>
+</div>
 
+<div class="wrap">
   <div class="layout">
-    <article class="article-body glass">
-      <h2 id="sec1">01. 行程概览</h2>
-      <p>当极光划破北极圈的夜空，吕瑟峡湾的冰川在星光下泛着冷调的蓝。七日徒步，穿越最震撼的峡湾线，从卑尔根出发，深入极地边缘，体验冰与光的诗篇。</p>
-      <p>本次路线全长约 68 公里，海拔爬升 1200m，沿途经过冰川湖、雪山营地、古老渔村。我们选择三月出发，正值极光季高峰，夜晚气温 -8℃ 至 -2℃，日间晴好，适合徒步与摄影。</p>
+    <main class="article-main">
+      <!-- 左上小信息卡 -->
+      <div class="glass tech-card info-mini">
+        <div><span class="k">⏱</span><b>12 min</b><i>阅读时长</i></div>
+        <div><span class="k">📅</span><b>2024.03.18</b><i>发布日期</i></div>
+        <div><span class="k">👁</span><b>2.8k</b><i>阅读量</i></div>
+        <div><span class="k">♥</span><b>2.8k</b><i>点赞</i></div>
+      </div>
 
-      <h2 id="sec2">02. 徒步路线 &amp; 每日记录</h2>
-      <ul class="route">
-        <li><b>Day 1.</b> 卑尔根 → 弗拉姆，冰川列车初体验</li>
-        <li><b>Day 3.</b> 攀登布道石，悬崖日落</li>
-        <li><b>Day 5.</b> 冰川宿营 &amp; 极光守夜</li>
-      </ul>
-      <p>第三天是最难忘的一天。清晨五点出发，背着十五公斤的包，沿着之字形山路上行。下午四点登顶布道石时，云层正好裂开一道缝，阳光像舞台灯一样打在峡湾上，同行的人都安静了。</p>
-      <figure>
-        <img loading="lazy" src="https://picsum.photos/seed/pick-fjord/1000/560" alt="峡湾风光">
-        <figcaption>图 · 第三天营地，KP5 级极光爆发实拍（占位图）</figcaption>
-      </figure>
+      <section class="glass tech-card tsec" id="sec1">
+        <h2><span class="num">01.</span>行程概览</h2>
+        <p>当极光划破北极圈的夜空，吕瑟峡湾的冰川在星光下泛着冷调的蓝。七日徒步，穿越最震撼的峡湾线，从卑尔根出发，深入极地边缘，体验冰与光的诗篇。</p>
+        <p>本次路线全长约 68 公里，海拔爬升 1200m，沿途经过冰川湖、雪山营地、古老渔村。我们选择三月出发，正值极光季高峰，夜晚气温 -8℃ 至 -2℃，日间晴好，适合徒步与摄影。</p>
+      </section>
 
-      <h2 id="sec3">03. 极光观测与拍摄建议</h2>
-      <p><b>最佳观测时间：</b>23:00–02:00，避开月光，KP 值 ≥ 4 时成功率更高。</p>
-      <p><b>摄影参数：</b>ISO 1600–3200，f/2.8，快门 15–20 秒，三脚架必备。</p>
-      <p><b>推荐设备：</b>广角镜头 14–24mm，防寒电池保温套。极寒下电池掉电极快，记得把备用电池贴身存放。</p>
-      <p>最后一晚，极光如期而至。绿色的光带在头顶缓缓舞动，像有人在天上铺开一条发光的河。那一刻觉得，所有的寒冷和疲惫都值得。</p>
-    </article>
+      <section class="glass tech-card tsec" id="sec2">
+        <h2><span class="num">02.</span>徒步路线 &amp; 每日记录</h2>
+        <ul class="route">
+          <li><b>Day 1.</b>卑尔根 → 弗拉姆，冰川列车初体验</li>
+          <li><b>Day 3.</b>攀登布道石，悬崖日落</li>
+          <li><b>Day 5.</b>冰川宿营 &amp; 极光守夜</li>
+        </ul>
+        <p>第三天是最难忘的一天。清晨五点出发，背着十五公斤的包，沿着之字形山路上行。下午四点登顶布道石时，云层正好裂开一道缝，阳光像舞台灯一样打在峡湾上，同行的人都安静了。</p>
+      </section>
+
+      <section class="glass tech-card tsec tsec-media" id="sec3">
+        <img class="tsec-img" loading="lazy" src="images/travel/fig-camp.jpg" alt="第三天营地极光">
+        <div>
+          <h2><span class="num">03.</span>极光观测与拍摄建议</h2>
+          <ul class="tips">
+            <li><b>最佳观测时间：</b>23:00–02:00，避开月光，KP 值 ≥ 4 时成功率更高。</li>
+            <li><b>摄影参数：</b>ISO 1600–3200，f/2.8，快门 15–20 秒，三脚架必备。</li>
+            <li><b>推荐设备：</b>广角镜头 14–24mm，防寒电池保温套。</li>
+          </ul>
+          <p class="capline">图 · 第三天营地，KP5 级极光爆发实拍</p>
+        </div>
+      </section>
+
+      <section class="glass tech-card tsec" id="sec4">
+        <h2><span class="num">04.</span>装备清单与保暖指南</h2>
+        <p>三层穿衣是铁律：排汗内衣 + 抓绒中间层 + 防风冲锋衣。手套备两副（一薄一厚），帽子遮住耳朵，暖宝宝贴满鞋垫。极寒下手机半小时就关机，充电宝贴身放，用保温套裹住相机电池。</p>
+      </section>
+
+      <section class="glass tech-card tsec" id="sec5">
+        <h2><span class="num">05.</span>摄影技巧 &amp; 相机设置</h2>
+        <p>手动对焦拧到无穷远再回拨一点，用实时取景放大星星确认合焦。前景找个小木屋或枯树做剪影，画面立刻有故事。别只顾拍——留十分钟给自己，躺下来看极光在头顶流动。</p>
+      </section>
+
+      <section class="glass tech-card tsec" id="sec6">
+        <h2><span class="num">06.</span>安全提示 &amp; 当地注意</h2>
+        <p>布道石一带无护栏，风大时贴着内侧走；冰川行走务必跟向导，不要独自上冰。挪威商店周日大多关门，补给提前买好。最后一晚，极光如期而至——所有的寒冷和疲惫都值得。</p>
+      </section>
+    </main>
 
     <aside class="sidebar">
       <div class="side-card glass author-top">
-        <span class="avatar big">拾</span>
+        <img class="avatar-img big" src="images/avatar.jpg" alt="拾光">
         <div class="name">拾光</div>
         <p class="bio">以笔为舟，漫山河诗行</p>
         <div class="author-stats">
@@ -92,22 +125,25 @@
           <div><b>18</b><span>游记</span></div>
           <div><b>1286</b><span>关注</span></div>
         </div>
-        <a class="btn sm" href="records.html">关注作者 +</a>
+        <a class="btn sm follow" href="records.html">关注作者 +</a>
       </div>
       <div class="side-card glass">
-        <h4>目录</h4>
-        <ul class="toc">
-          <li><a href="#sec1">行程概览</a></li>
-          <li><a href="#sec2">徒步路线 &amp; 每日记录</a></li>
-          <li><a href="#sec3">极光观测与拍摄建议</a></li>
+        <h4>☰ 目录<span class="en">Table of Contents</span></h4>
+        <ul class="toc toc-num">
+          <li><a href="#sec1"><span class="n">01</span>行程概览</a></li>
+          <li><a href="#sec2"><span class="n">02</span>徒步路线 &amp; 每日记录</a></li>
+          <li><a href="#sec3"><span class="n">03</span>极光观测与拍摄建议</a></li>
+          <li><a href="#sec4"><span class="n">04</span>装备清单与保暖指南</a></li>
+          <li><a href="#sec5"><span class="n">05</span>摄影技巧 &amp; 相机设置</a></li>
+          <li><a href="#sec6"><span class="n">06</span>安全提示 &amp; 当地注意</a></li>
         </ul>
       </div>
       <div class="side-card glass">
-        <h4>相关推荐</h4>
-        <div class="rec-list">
-          <a href="album.html"><span class="n">1</span>相册 · 光影留存</a>
-          <a href="essays.html"><span class="n">2</span>随笔 · 山间碎念</a>
-          <a href="index.html"><span class="n">3</span>回到首页</a>
+        <h4>相关推荐<span class="en">Table of Contents</span></h4>
+        <div class="rel-list">
+          <a href="album.html"><img src="images/travel/rel-1.jpg" alt=""><span>《罗弗敦群岛：冬季自驾指南》</span><i>→</i></a>
+          <a href="essays.html"><img src="images/travel/rel-2.jpg" alt=""><span>《北极圈露营：极寒装备清单》</span><i>→</i></a>
+          <a href="album.html"><img src="images/travel/rel-3.jpg" alt=""><span>《冰岛环岛：10日摄影路线》</span><i>→</i></a>
         </div>
       </div>
     </aside>
