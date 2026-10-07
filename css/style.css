@@ -433,7 +433,7 @@ body.page-blue .photo {
 /* ---------- 百宝箱蓝色 Banner（独立通栏） ---------- */
 .treasure-banner {
   background:
-    url("../images/treasure/banner-bg.jpg?v=2") center / cover no-repeat,
+    url("../images/treasure/banner-bg.jpg?v=3") center / cover no-repeat,
     linear-gradient(120deg, #1877F2 0%, #0f63dd 55%, #0a45a5 100%);
   position: relative; overflow: hidden;
   margin: 26px 0 10px;
