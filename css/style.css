@@ -436,7 +436,7 @@ body.page-blue .photo {
     url("../images/treasure/banner-bg.jpg?v=3") center / cover no-repeat,
     linear-gradient(120deg, #1877F2 0%, #0f63dd 55%, #0a45a5 100%);
   position: relative; overflow: hidden;
-  margin: 26px 0 10px;
+  margin: -70px 0 10px;
 }
 .treasure-banner::before {
   content: ""; position: absolute; inset: 0; pointer-events: none;
@@ -446,7 +446,7 @@ body.page-blue .photo {
 }
 .treasure-banner-inner {
   display: grid; grid-template-columns: auto 1fr auto; gap: 36px; align-items: center;
-  padding-top: 40px; padding-bottom: 48px; position: relative; z-index: 1;
+  padding-top: 110px; padding-bottom: 48px; position: relative; z-index: 1;
 }
 .treasure-chest { width: 170px; height: auto; filter: drop-shadow(0 0 22px rgba(120, 190, 255, .55)); }
 .treasure-banner-text h1 {
@@ -565,6 +565,8 @@ body.page-blue .photo {
 .btn.follow { background: linear-gradient(135deg, var(--fb), var(--fb-dark)); color: #fff; border: none;
   box-shadow: 0 8px 18px rgba(24,119,242,.4); }
 .btn.follow:hover { color: #fff; transform: translateY(-2px); }
+/* 作者卡片飘在 banner 上（贴渲染图） */
+.sidebar .author-top { position: relative; z-index: 2; margin-top: -120px; }
 
 /* ---------- 响应式 ---------- */
 @media (max-width: 1020px) {
@@ -579,7 +581,7 @@ body.page-blue .photo {
   .hero-blue-bg { position: relative; width: 100%; height: 220px;
     -webkit-mask-image: none; mask-image: none; }
   .hero-blue-inner { padding-top: 30px; padding-bottom: 40px; max-width: none; }
-  .treasure-banner-inner { grid-template-columns: 1fr; gap: 20px; text-align: center; padding-top: 32px; padding-bottom: 40px; }
+  .treasure-banner-inner { grid-template-columns: 1fr; gap: 20px; text-align: center; padding-top: 102px; padding-bottom: 40px; }
   .treasure-chest { width: 130px; margin: 0 auto; }
   .treasure-stats { grid-template-columns: repeat(3, 1fr); min-width: 0; }
   .tstat { flex-direction: column; align-items: center; gap: 2px; }
@@ -616,4 +618,5 @@ body.page-blue .photo {
   .tsec { padding: 22px 20px; }
   .tsec-media { grid-template-columns: 1fr; }
   .info-mini { grid-template-columns: repeat(2, 1fr); gap: 14px; }
+  .sidebar .author-top { margin-top: 0; }
 }
