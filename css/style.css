@@ -409,7 +409,9 @@ body.page-blue .photo {
 
 /* ---------- 百宝箱蓝色 Banner（独立通栏） ---------- */
 .treasure-banner {
-  background: linear-gradient(120deg, #1877F2 0%, #0f63dd 55%, #0a45a5 100%);
+  background:
+    url("../images/treasure/banner-bg.jpg") center / cover no-repeat,
+    linear-gradient(120deg, #1877F2 0%, #0f63dd 55%, #0a45a5 100%);
   position: relative; overflow: hidden;
   margin: 26px 0 10px;
 }
@@ -423,7 +425,7 @@ body.page-blue .photo {
   display: grid; grid-template-columns: auto 1fr auto; gap: 36px; align-items: center;
   padding-top: 40px; padding-bottom: 48px; position: relative; z-index: 1;
 }
-.treasure-chest { width: 170px; height: auto; filter: drop-shadow(0 12px 28px rgba(0,0,0,.35)); }
+.treasure-chest { width: 170px; height: auto; filter: drop-shadow(0 0 22px rgba(120, 190, 255, .55)); }
 .treasure-banner-text h1 {
   color: #fff; font-size: clamp(28px, 3.8vw, 40px); letter-spacing: 2px; margin-bottom: 10px;
   text-shadow: 0 3px 16px rgba(0,0,0,.35);
