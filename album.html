@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>相册 · 光影留存 · 拾光小站</title>
+<meta name="description" content="用照片记录旅程与时刻——旅拍、城市、自然、人文。">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="album">
+
+<header class="site-header glass">
+  <div class="header-inner">
+    <a class="logo" href="index.html"><span class="logo-mark">拾</span><span class="logo-text">拾光小站</span></a>
+    <nav class="main-nav" id="mainNav">
+      <a href="index.html" data-nav="index">首页</a>
+      <a href="travel.html" data-nav="travel">游记</a>
+      <a href="essays.html" data-nav="essays">随笔</a>
+      <a href="album.html" data-nav="album">相册</a>
+      <a href="treasure.html" data-nav="treasure">百宝箱</a>
+      <a href="records.html" data-nav="records">记录</a>
+    </nav>
+    <div class="header-actions">
+      <button class="icon-btn" id="searchBtn" aria-label="搜索">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>
+      </button>
+      <button class="icon-btn" id="themeBtn" aria-label="切换深浅色">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+      </button>
+      <span class="avatar" title="博主">拾</span>
+      <button class="icon-btn hamburger" id="hamburger" aria-label="菜单">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </button>
+    </div>
+  </div>
+  <div class="search-bar" id="searchBar">
+    <div class="search-inner">
+      <input id="searchInput" type="text" placeholder="搜索文章、相册、百宝箱…">
+      <div class="search-results" id="searchResults"></div>
+    </div>
+  </div>
+</header>
+
+<div class="wrap">
+  <section class="page-hero glass">
+    <h1>相册 · 光影留存</h1>
+    <p>用照片记录旅程与时刻 · 共 127 张光影 · 6 个相册</p>
+    <!-- 占位图说明：下方所有照片均来自 picsum.photos 随机图。
+         替换方法：把 img 的 src 换成你自己的图片地址（如 images/xxx.jpg），
+         建议把照片放在 images/ 目录下，见 README.md -->
+  </section>
+
+  <div class="tabs">
+    <button class="tab active" data-filter="all">全部</button>
+    <button class="tab" data-filter="travel">旅拍</button>
+    <button class="tab" data-filter="city">城市</button>
+    <button class="tab" data-filter="nature">自然</button>
+    <button class="tab" data-filter="people">人文</button>
+  </div>
+
+  <div class="masonry">
+    <figure class="photo glass" data-cat="nature">
+      <img loading="lazy" src="https://picsum.photos/seed/pick-jiuzhai/600/760" alt="九寨沟">
+      <figcaption class="cap"><b>📍 九寨沟 · 碧水叠瀑</b><span>23张 · 2024年4月</span></figcaption>
+    </figure>
+    <figure class="photo glass" data-cat="city">
+      <img loading="lazy" src="https://picsum.photos/seed/pick-shanghai/600/500" alt="上海外滩">
+      <figcaption class="cap"><b>📍 上海 · 外滩夜色</b><span>18张 · 2024年4月</span></figcaption>
+    </figure>
+    <figure class="photo glass" data-cat="people">
+      <img loading="lazy" src="https://picsum.photos/seed/pick-kyoto/600/680" alt="京都">
+      <figcaption class="cap"><b>📍 京都 · 樱道晚照</b><span>32张 · 2024年4月</span></figcaption>
+    </figure>
+    <figure class="photo glass" data-cat="nature">
+      <img loading="lazy" src="https://picsum.photos/seed/pick-dunhuang/600/520" alt="敦煌">
+      <figcaption class="cap"><b>📍 敦煌 · 鸣沙月泉</b><span>15张 · 2024年4月</span></figcaption>
+    </figure>
+    <figure class="photo glass" data-cat="nature">
+      <img loading="lazy" src="https://picsum.photos/seed/pick-zhangjiajie/600/740" alt="张家界">
+      <figcaption class="cap"><b>📍 张家界 · 云雾林瀑</b><span>21张 · 2024年3月</span></figcaption>
+    </figure>
+    <figure class="photo glass" data-cat="travel">
+      <img loading="lazy" src="https://picsum.photos/seed/pick-xiamen/600/540" alt="厦门">
+      <figcaption class="cap"><b>📍 厦门 · 鼓浪屿海崖</b><span>18张 · 2024年3月</span></figcaption>
+    </figure>
+    <figure class="photo glass" data-cat="travel">
+      <img loading="lazy" src="https://picsum.photos/seed/pick-norway/600/700" alt="挪威峡湾">
+      <figcaption class="cap"><b>📍 挪威 · 峡湾极光</b><span>26张 · 2024年3月</span></figcaption>
+    </figure>
+    <figure class="photo glass" data-cat="city">
+      <img loading="lazy" src="https://picsum.photos/seed/pick-chengdu/600/560" alt="成都">
+      <figcaption class="cap"><b>📍 成都 · 宽窄巷子</b><span>12张 · 2024年2月</span></figcaption>
+    </figure>
+    <figure class="photo glass" data-cat="people">
+      <img loading="lazy" src="https://picsum.photos/seed/pick-lijiang/600/620" alt="丽江">
+      <figcaption class="cap"><b>📍 丽江 · 古城人家</b><span>19张 · 2024年1月</span></figcaption>
+    </figure>
+    <figure class="photo glass" data-cat="nature">
+      <img loading="lazy" src="https://picsum.photos/seed/pick-hulunbuir/600/580" alt="呼伦贝尔">
+      <figcaption class="cap"><b>📍 呼伦贝尔 · 草原晨雾</b><span>14张 · 2023年12月</span></figcaption>
+    </figure>
+    <figure class="photo glass" data-cat="travel">
+      <img loading="lazy" src="https://picsum.photos/seed/pick-yunnan2/600/660" alt="云南大理">
+      <figcaption class="cap"><b>📍 大理 · 洱海日出</b><span>22张 · 2024年1月</span></figcaption>
+    </figure>
+    <figure class="photo glass" data-cat="city">
+      <img loading="lazy" src="https://picsum.photos/seed/pick-hangzhou/600/520" alt="杭州西湖">
+      <figcaption class="cap"><b>📍 杭州 · 西湖雨后</b><span>16张 · 2024年4月</span></figcaption>
+    </figure>
+  </div>
+</div>
+
+<footer class="site-footer glass wrap">
+  <nav class="fnav">
+    <a href="index.html">首页</a><a href="travel.html">游记</a><a href="essays.html">随笔</a>
+    <a href="album.html">相册</a><a href="treasure.html">百宝箱</a><a href="records.html">记录</a>
+  </nav>
+  <p>© <span id="year"></span> 拾光小站 · 纯静态博客 · 可部署于 GitHub Pages</p>
+  <p>站内图片为占位图（picsum.photos），替换方法见 README.md</p>
+</footer>
+
+<button class="to-top" id="toTop" aria-label="回到顶部">↑</button>
+<script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>随笔 · 拾光小站</title>
+<meta name="description" content="随笔——短内容时间流，记录日常的碎片与心情。">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="essays">
+
+<header class="site-header glass">
+  <div class="header-inner">
+    <a class="logo" href="index.html"><span class="logo-mark">拾</span><span class="logo-text">拾光小站</span></a>
+    <nav class="main-nav" id="mainNav">
+      <a href="index.html" data-nav="index">首页</a>
+      <a href="travel.html" data-nav="travel">游记</a>
+      <a href="essays.html" data-nav="essays">随笔</a>
+      <a href="album.html" data-nav="album">相册</a>
+      <a href="treasure.html" data-nav="treasure">百宝箱</a>
+      <a href="records.html" data-nav="records">记录</a>
+    </nav>
+    <div class="header-actions">
+      <button class="icon-btn" id="searchBtn" aria-label="搜索">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>
+      </button>
+      <button class="icon-btn" id="themeBtn" aria-label="切换深浅色">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+      </button>
+      <span class="avatar" title="博主">拾</span>
+      <button class="icon-btn hamburger" id="hamburger" aria-label="菜单">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </button>
+    </div>
+  </div>
+  <div class="search-bar" id="searchBar">
+    <div class="search-inner">
+      <input id="searchInput" type="text" placeholder="搜索文章、相册、百宝箱…">
+      <div class="search-results" id="searchResults"></div>
+    </div>
+  </div>
+</header>
+
+<div class="wrap">
+  <section class="page-hero glass">
+    <h1>随笔</h1>
+    <p>不需要标题，不需要分类。灵感碎片、日常吐槽、深夜感慨，都丢在这里——一个随身携带的情绪收纳盒。</p>
+  </section>
+
+  <div class="essay-stream">
+    <article class="essay-item glass">
+      <div class="essay-date">2024-04-12 · 晴</div>
+      <p>春山夜行，灯火如星。春夜游过山间，灯火如繁星点点，夜色渐深，松涛与溪水交响，静听自然的低语。有些路，一个人走反而更清楚自己要去哪。</p>
+      <div class="mood">📍 山间 · 心情：平静</div>
+    </article>
+    <article class="essay-item glass">
+      <div class="essay-date">2024-04-08 · 雨</div>
+      <p>雨后西湖，适合发呆。雨停了，巷子里的青石板泛着潮湿的光，茶烟从屋檐缝隙升起。一个下午，一杯茶，什么都不做，也是一种抵达。</p>
+      <div class="mood">📍 杭州 · 心情：放松</div>
+    </article>
+    <article class="essay-item glass">
+      <div class="essay-date">2024-04-03 · 阴</div>
+      <p>墨染秋叶，笔下闲云。秋叶渐染时，墨色也随之更深。于宣纸统一笔闲云，任它随风散去远方。写字和走路一样，慢下来才看得清。</p>
+      <div class="mood">📍 书房 · 心情：专注</div>
+    </article>
+    <article class="essay-item glass">
+      <div class="essay-date">2024-03-28 · 晴</div>
+      <p>整理旧照片，发现三年前的自己站在同一座山前，笑得没心没肺。山还是那座山，人已经走了很远。挺好的。</p>
+      <div class="mood">📍 相册 · 心情：怀旧</div>
+    </article>
+    <article class="essay-item glass">
+      <div class="essay-date">2024-03-20 · 多云</div>
+      <p>楼下的桂花开了，香气拐着弯钻进窗户。决定今晚不加班，去江边走一走。生活偶尔也需要一点不务正业。</p>
+      <div class="mood">📍 江边 · 心情：愉悦</div>
+    </article>
+    <article class="essay-item glass">
+      <div class="essay-date">2024-03-15 · 雪</div>
+      <p>极光之夜的后遗症：看什么都觉得不够亮。回来一周了，梦里还是那片绿色的天。有些风景，看过就再也忘不掉。</p>
+      <div class="mood">📍 挪威 · 心情：震撼</div>
+    </article>
+  </div>
+</div>
+
+<footer class="site-footer glass wrap">
+  <nav class="fnav">
+    <a href="index.html">首页</a><a href="travel.html">游记</a><a href="essays.html">随笔</a>
+    <a href="album.html">相册</a><a href="treasure.html">百宝箱</a><a href="records.html">记录</a>
+  </nav>
+  <p>© <span id="year"></span> 拾光小站 · 纯静态博客 · 可部署于 GitHub Pages</p>
+  <p>站内图片为占位图（picsum.photos），替换方法见 README.md</p>
+</footer>
+
+<button class="to-top" id="toTop" aria-label="回到顶部">↑</button>
+<script src="js/main.js"></script>
+</body>
+</html>

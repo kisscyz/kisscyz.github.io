@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>拾光小站 · 首页</title>
+<meta name="description" content="拾光小站——游记、随笔、相册与百宝箱，记录山水与日常。">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="index">
+
+<!-- ================= 页眉（全站共用） ================= -->
+<header class="site-header glass">
+  <div class="header-inner">
+    <a class="logo" href="index.html"><span class="logo-mark">拾</span><span class="logo-text">拾光小站</span></a>
+    <nav class="main-nav" id="mainNav">
+      <a href="index.html" data-nav="index">首页</a>
+      <a href="travel.html" data-nav="travel">游记</a>
+      <a href="essays.html" data-nav="essays">随笔</a>
+      <a href="album.html" data-nav="album">相册</a>
+      <a href="treasure.html" data-nav="treasure">百宝箱</a>
+      <a href="records.html" data-nav="records">记录</a>
+    </nav>
+    <div class="header-actions">
+      <button class="icon-btn" id="searchBtn" aria-label="搜索">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>
+      </button>
+      <button class="icon-btn" id="themeBtn" aria-label="切换深浅色">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+      </button>
+      <span class="avatar" title="博主">拾</span>
+      <button class="icon-btn hamburger" id="hamburger" aria-label="菜单">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </button>
+    </div>
+  </div>
+  <div class="search-bar" id="searchBar">
+    <div class="search-inner">
+      <input id="searchInput" type="text" placeholder="搜索文章、相册、百宝箱…">
+      <div class="search-results" id="searchResults"></div>
+    </div>
+  </div>
+</header>
+
+<div class="wrap">
+
+  <!-- ================= 首页 Hero ================= -->
+  <section class="hero glass">
+    <div class="hero-grid">
+      <div>
+        <span class="eyebrow">欢迎来到我的小站</span>
+        <h1>在山水之间，<span class="hl">拾一段光</span></h1>
+        <p class="sub">轻风、墨香，与未完的诗篇。这里记录我的游记与随笔，收藏路上的光影，慢慢来，读一页山水的宁静。</p>
+        <div class="hero-cta">
+          <a class="btn" href="travel.html">开始阅读 →</a>
+          <a class="btn ghost" href="album.html">看看相册</a>
+        </div>
+      </div>
+      <div class="hero-img">
+        <!-- 占位图：把 src 换成你自己的横幅图即可 -->
+        <img src="https://picsum.photos/seed/pick-hero/900/560" alt="山水横幅">
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= 双栏 ================= -->
+  <div class="layout">
+    <main>
+      <h2 class="section-title">最新文章</h2>
+      <p class="section-sub">累积更新 · 共二十一篇</p>
+
+      <article class="post-card glass">
+        <div class="cover"><a href="travel.html"><img loading="lazy" src="https://picsum.photos/seed/pick-aurora/900/440" alt="挪威极光"></a></div>
+        <div class="post-body">
+          <h3><a href="travel.html">冰川极光：七日挪威峡湾徒步纪实</a></h3>
+          <p class="post-excerpt">当极光划破北极圈的夜空，吕瑟峡湾的冰川在星光下泛着冷调的蓝。七日徒步，穿越最震撼的峡湾线，从卑尔根出发，深入极地边缘，体验冰与光的诗篇……</p>
+          <div class="post-meta"><span>2024年3月15日</span><span>·</span><span>12 min 阅读</span><a class="tag" href="travel.html">#游记 · 挪威</a></div>
+        </div>
+      </article>
+
+      <article class="post-card glass">
+        <div class="cover"><a href="travel.html"><img loading="lazy" src="https://picsum.photos/seed/pick-yunnan/900/440" alt="云南旅行"></a></div>
+        <div class="post-body">
+          <h3><a href="travel.html">一场说走就走的旅行——云南</a></h3>
+          <p class="post-excerpt">休假后的第一件事就是出去旅游啦。这是一篇迟到的暑中期旅游分享帖！当时是 18–19w，暑中期后孕反消失，感觉身轻如燕，检查一路绿灯，于是说走就走，选了云南，主打一个休闲式穷游……</p>
+          <div class="post-meta"><span>2024年1月10日</span><span>·</span><span>8 min 阅读</span><a class="tag" href="travel.html">#游记 · 云南</a></div>
+        </div>
+      </article>
+
+      <article class="post-card glass">
+        <div class="cover"><a href="essays.html"><img loading="lazy" src="https://picsum.photos/seed/pick-lake/900/440" alt="湖边随笔"></a></div>
+        <div class="post-body">
+          <h3><a href="essays.html">雨后西湖，适合发呆</a></h3>
+          <p class="post-excerpt">雨停了，巷子里的你弥漫着潮湿的气息。茶烟从屋檐缝隙升起，行船划开，桂台边民在低语。有些下午，就该浪费在发呆里……</p>
+          <div class="post-meta"><span>2024年4月8日</span><span>·</span><span>3 min 阅读</span><a class="tag" href="essays.html">#随笔</a></div>
+        </div>
+      </article>
+    </main>
+
+    <aside class="sidebar">
+      <div class="side-card glass author-top">
+        <span class="avatar big">拾</span>
+        <div class="name">拾光</div>
+        <p class="bio">以笔为舟，漫山河诗行</p>
+        <div class="author-stats">
+          <div><b>32</b><span>文章</span></div>
+          <div><b>18</b><span>随笔</span></div>
+          <div><b>1024</b><span>关注</span></div>
+        </div>
+        <a class="btn sm" href="records.html">关注作者</a>
+      </div>
+
+      <div class="side-card glass">
+        <h4>热门标签</h4>
+        <div class="tag-cloud">
+          <a class="tag" href="travel.html">#游记</a>
+          <a class="tag" href="essays.html">#随笔</a>
+          <a class="tag" href="album.html">#旅拍</a>
+          <a class="tag" href="album.html">#城市</a>
+          <a class="tag" href="album.html">#自然</a>
+          <a class="tag" href="treasure.html">#工具</a>
+        </div>
+      </div>
+
+      <div class="side-card glass">
+        <h4>推荐阅读</h4>
+        <div class="rec-list">
+          <a href="travel.html"><span class="n">1</span>冰川极光：七日挪威峡湾徒步纪实</a>
+          <a href="album.html"><span class="n">2</span>相册 · 光影留存</a>
+          <a href="treasure.html"><span class="n">3</span>百宝箱 · 资源中心</a>
+        </div>
+      </div>
+    </aside>
+  </div>
+</div>
+
+<!-- ================= 页脚（全站共用） ================= -->
+<footer class="site-footer glass wrap">
+  <nav class="fnav">
+    <a href="index.html">首页</a><a href="travel.html">游记</a><a href="essays.html">随笔</a>
+    <a href="album.html">相册</a><a href="treasure.html">百宝箱</a><a href="records.html">记录</a>
+  </nav>
+  <p>© <span id="year"></span> 拾光小站 · 纯静态博客 · 可部署于 GitHub Pages</p>
+  <p>站内图片为占位图（picsum.photos），替换方法见 README.md</p>
+</footer>
+
+<button class="to-top" id="toTop" aria-label="回到顶部">↑</button>
+<script src="js/main.js"></script>
+</body>
+</html>

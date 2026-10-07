@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>记录 · 拾光小站</title>
+<meta name="description" content="记录——站点与人生的时间线。">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="records">
+
+<header class="site-header glass">
+  <div class="header-inner">
+    <a class="logo" href="index.html"><span class="logo-mark">拾</span><span class="logo-text">拾光小站</span></a>
+    <nav class="main-nav" id="mainNav">
+      <a href="index.html" data-nav="index">首页</a>
+      <a href="travel.html" data-nav="travel">游记</a>
+      <a href="essays.html" data-nav="essays">随笔</a>
+      <a href="album.html" data-nav="album">相册</a>
+      <a href="treasure.html" data-nav="treasure">百宝箱</a>
+      <a href="records.html" data-nav="records">记录</a>
+    </nav>
+    <div class="header-actions">
+      <button class="icon-btn" id="searchBtn" aria-label="搜索">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>
+      </button>
+      <button class="icon-btn" id="themeBtn" aria-label="切换深浅色">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+      </button>
+      <span class="avatar" title="博主">拾</span>
+      <button class="icon-btn hamburger" id="hamburger" aria-label="菜单">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </button>
+    </div>
+  </div>
+  <div class="search-bar" id="searchBar">
+    <div class="search-inner">
+      <input id="searchInput" type="text" placeholder="搜索文章、相册、百宝箱…">
+      <div class="search-results" id="searchResults"></div>
+    </div>
+  </div>
+</header>
+
+<div class="wrap">
+  <section class="page-hero glass">
+    <h1>记录</h1>
+    <p>站点与人生的时间线——每一步都算数。</p>
+  </section>
+
+  <div class="timeline">
+    <div class="tl-item glass">
+      <span class="tl-date">2024-04-12</span>
+      <h3>小站改版：玻璃拟态新皮肤上线</h3>
+      <p>全站换成 Facebook 蓝 + 玻璃拟态风格，卡片、按钮、侧栏全部磨砂化，手机端也做了单列适配。</p>
+    </div>
+    <div class="tl-item glass">
+      <span class="tl-date">2024-04-08</span>
+      <h3>发布随笔《雨后西湖，适合发呆》</h3>
+      <p>雨后的杭州，巷子泛着潮湿的光。有些下午就该浪费在发呆里。</p>
+    </div>
+    <div class="tl-item glass">
+      <span class="tl-date">2024-04-03</span>
+      <h3>相册新增「京都 · 樱道晚照」32 张</h3>
+      <p>整理好了京都之行的照片，樱花季的晚照，美得不像话。</p>
+    </div>
+    <div class="tl-item glass">
+      <span class="tl-date">2024-03-15</span>
+      <h3>发布游记《冰川极光：七日挪威峡湾徒步纪实》</h3>
+      <p>七日徒步，68 公里，KP5 级极光爆发。这是今年最难忘的一次出发。</p>
+    </div>
+    <div class="tl-item glass">
+      <span class="tl-date">2024-02-20</span>
+      <h3>百宝箱上线：资源中心开放</h3>
+      <p>把私藏的写作灵感库、摄影参数表、行李清单都整理进了百宝箱。</p>
+    </div>
+    <div class="tl-item glass">
+      <span class="tl-date">2024-01-10</span>
+      <h3>发布游记《一场说走就走的旅行——云南》</h3>
+      <p>暑中期的云南之行，主打一个休闲式穷游，看心不看攻略。</p>
+    </div>
+    <div class="tl-item glass">
+      <span class="tl-date">2024-01-01</span>
+      <h3>拾光小站正式上线 🎉</h3>
+      <p>纯静态博客第一版发布，部署在 GitHub Pages，免费、快速、无需服务器。</p>
+    </div>
+  </div>
+</div>
+
+<footer class="site-footer glass wrap">
+  <nav class="fnav">
+    <a href="index.html">首页</a><a href="travel.html">游记</a><a href="essays.html">随笔</a>
+    <a href="album.html">相册</a><a href="treasure.html">百宝箱</a><a href="records.html">记录</a>
+  </nav>
+  <p>© <span id="year"></span> 拾光小站 · 纯静态博客 · 可部署于 GitHub Pages</p>
+  <p>站内图片为占位图（picsum.photos），替换方法见 README.md</p>
+</footer>
+
+<button class="to-top" id="toTop" aria-label="回到顶部">↑</button>
+<script src="js/main.js"></script>
+</body>
+</html>
