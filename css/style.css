@@ -498,7 +498,8 @@ body.page-blue .photo {
 /* ---------- 通用内页顶部（同步首页：蓝条导航 + banner 图只在下方） ---------- */
 .page-top { background: linear-gradient(120deg, #1877F2 0%, #0f63dd 55%, #0a45a5 100%); }
 .page-banner { position: relative; overflow: hidden;
-  background: var(--pb) center / cover no-repeat, #0a45a5; }
+  background-position: center; background-size: cover; background-repeat: no-repeat;
+  background-color: #0a45a5; }
 .page-banner::after { content: ""; position: absolute; inset: 0; pointer-events: none;
   background: linear-gradient(180deg, rgba(10,69,165,.35), rgba(10,69,165,.08) 50%, rgba(10,69,165,.45)); }
 .page-banner-inner { position: relative; z-index: 1; padding: 42px 22px 58px; }
@@ -585,8 +586,8 @@ body.page-blue .photo {
 .btn.follow { background: linear-gradient(135deg, var(--fb), var(--fb-dark)); color: #fff; border: none;
   box-shadow: 0 8px 18px rgba(24,119,242,.4); }
 .btn.follow:hover { color: #fff; transform: translateY(-2px); }
-/* 作者卡片飘在 banner 上（贴渲染图） */
-.sidebar .author-top { position: relative; z-index: 2; margin-top: -120px; }
+/* 作者卡片飘在 banner 上（仅游记页，贴渲染图） */
+body[data-page="travel"] .sidebar .author-top { position: relative; z-index: 2; margin-top: -120px; }
 
 /* ---------- 响应式 ---------- */
 @media (max-width: 1020px) {
