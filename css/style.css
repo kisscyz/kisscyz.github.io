@@ -436,7 +436,7 @@ body.page-blue .photo {
     url("../images/treasure/banner-bg.jpg?v=3") center / cover no-repeat,
     linear-gradient(120deg, #1877F2 0%, #0f63dd 55%, #0a45a5 100%);
   position: relative; overflow: hidden;
-  margin: -70px 0 10px;
+  margin: 0 0 10px;
 }
 .treasure-banner::before {
   content: ""; position: absolute; inset: 0; pointer-events: none;
@@ -446,7 +446,7 @@ body.page-blue .photo {
 }
 .treasure-banner-inner {
   display: grid; grid-template-columns: auto 1fr auto; gap: 36px; align-items: center;
-  padding-top: 110px; padding-bottom: 48px; position: relative; z-index: 1;
+  padding-top: 40px; padding-bottom: 48px; position: relative; z-index: 1;
 }
 .treasure-chest { width: 170px; height: auto; filter: drop-shadow(0 0 22px rgba(120, 190, 255, .55)); }
 .treasure-banner-text h1 {
@@ -496,12 +496,12 @@ body.page-blue .photo {
 .tl-item p { color: var(--muted); font-size: 14.5px; }
 
 /* ---------- 游记详情（贴渲染图科技风） ---------- */
-.travel-top { position: relative; overflow: hidden; background: #0a1a35; }
-.travel-hero-bg { position: absolute; inset: 0; }
-.travel-hero-bg img { width: 100%; height: 100%; object-fit: cover; display: block; }
-.travel-hero-bg::after { content: ""; position: absolute; inset: 0;
-  background: linear-gradient(180deg, rgba(8,20,40,.5), rgba(8,20,40,.08) 45%, rgba(8,20,40,.5)); }
-.travel-hero-inner { position: relative; z-index: 1; padding: 64px 22px 64px; }
+.travel-top { background: linear-gradient(120deg, #1877F2 0%, #0f63dd 55%, #0a45a5 100%); }
+/* 极光 banner 只在导航下方 */
+.travel-hero { background: url("../images/travel/hero-aurora.jpg") center / cover no-repeat; position: relative; }
+.travel-hero::after { content: ""; position: absolute; inset: 0; pointer-events: none;
+  background: linear-gradient(180deg, rgba(8,20,40,.35), rgba(8,20,40,.08) 50%, rgba(8,20,40,.5)); }
+.travel-hero-inner { position: relative; z-index: 1; padding: 64px 22px 88px; }
 .travel-hero-inner h1 { color: #fff; font-size: clamp(26px, 3.6vw, 40px); letter-spacing: 2px;
   text-shadow: 0 3px 18px rgba(0,0,0,.5); margin-bottom: 10px; }
 .travel-hero-inner .sub { color: rgba(255,255,255,.85); font-size: 15px; letter-spacing: 1px; }
@@ -581,7 +581,7 @@ body.page-blue .photo {
   .hero-blue-bg { position: relative; width: 100%; height: 220px;
     -webkit-mask-image: none; mask-image: none; }
   .hero-blue-inner { padding-top: 30px; padding-bottom: 40px; max-width: none; }
-  .treasure-banner-inner { grid-template-columns: 1fr; gap: 20px; text-align: center; padding-top: 102px; padding-bottom: 40px; }
+  .treasure-banner-inner { grid-template-columns: 1fr; gap: 20px; text-align: center; padding-top: 32px; padding-bottom: 40px; }
   .treasure-chest { width: 130px; margin: 0 auto; }
   .treasure-stats { grid-template-columns: repeat(3, 1fr); min-width: 0; }
   .tstat { flex-direction: column; align-items: center; gap: 2px; }
