@@ -433,20 +433,21 @@ body.page-blue .photo {
 /* ---------- 百宝箱蓝色 Banner（独立通栏） ---------- */
 .treasure-banner {
   background:
+    linear-gradient(120deg, rgba(24,119,242,.8) 0%, rgba(10,69,165,.8) 100%),
     url("../images/treasure/banner-bg.jpg?v=3") center / cover no-repeat,
-    linear-gradient(120deg, #1877F2 0%, #0f63dd 55%, #0a45a5 100%);
+    #0f63dd;
   position: relative; overflow: hidden;
   margin: 0 0 10px;
 }
 .treasure-banner::before {
   content: ""; position: absolute; inset: 0; pointer-events: none;
   background:
-    radial-gradient(700px 320px at 15% 30%, rgba(255,255,255,.14), transparent 60%),
-    radial-gradient(500px 260px at 90% 80%, rgba(255,255,255,.08), transparent 60%);
+    radial-gradient(700px 320px at 15% 30%, rgba(255,255,255,.1), transparent 60%),
+    radial-gradient(500px 260px at 90% 80%, rgba(255,255,255,.06), transparent 60%);
 }
 .treasure-banner-inner {
   display: grid; grid-template-columns: auto 1fr auto; gap: 36px; align-items: center;
-  padding-top: 40px; padding-bottom: 48px; position: relative; z-index: 1;
+  padding-top: 58px; padding-bottom: 66px; position: relative; z-index: 1;
 }
 .treasure-chest { width: 170px; height: auto; filter: drop-shadow(0 0 22px rgba(120, 190, 255, .55)); }
 .treasure-banner-text h1 {
@@ -509,7 +510,7 @@ body.page-blue .photo {
   background-color: #0a45a5; }
 .page-banner::after { content: ""; position: absolute; inset: 0; pointer-events: none;
   background: linear-gradient(180deg, rgba(10,69,165,.35), rgba(10,69,165,.08) 50%, rgba(10,69,165,.45)); }
-.page-banner-inner { position: relative; z-index: 1; padding: 42px 22px 58px; }
+.page-banner-inner { position: relative; z-index: 1; padding: 58px 22px 66px; }
 .page-banner-inner h1 { color: #fff; font-size: clamp(26px, 3.4vw, 36px); letter-spacing: 3px;
   text-shadow: 0 3px 16px rgba(0,0,0,.4); margin-bottom: 8px; }
 .page-banner-inner p { color: rgba(255,255,255,.88); font-size: 14.5px; letter-spacing: 1px; }
@@ -517,19 +518,17 @@ body.page-blue .photo {
 
 /* ---------- 游记详情（贴渲染图科技风） ---------- */
 .travel-top { background: linear-gradient(120deg, #1877F2 0%, #0f63dd 55%, #0a45a5 100%); }
-/* 极光 banner 只在导航下方：左侧蓝渐变与导航和谐衔接，右侧山水极光 */
+/* 极光 banner：首页蓝罩染 + 山水极光淡显，与首页同高 */
 .travel-hero {
   background:
-    linear-gradient(90deg, rgba(13,88,205,.95) 0%, rgba(13,88,205,.55) 30%, rgba(13,88,205,0) 58%),
+    linear-gradient(120deg, rgba(24,119,242,.8) 0%, rgba(10,69,165,.8) 100%),
     url("../images/travel/hero-aurora.jpg?v=2") center / cover no-repeat,
-    #0a2a6b;
+    #0f63dd;
   position: relative;
 }
-.travel-hero::before { content: ""; position: absolute; inset: 0; pointer-events: none;
-  background: linear-gradient(180deg, rgba(10,69,165,.5), transparent 32%); }
 .travel-hero::after { content: ""; position: absolute; inset: 0; pointer-events: none;
-  background: linear-gradient(180deg, transparent 55%, rgba(8,20,40,.5)); }
-.travel-hero-inner { position: relative; z-index: 1; padding: 64px 22px 88px; }
+  background: linear-gradient(180deg, rgba(255,255,255,.05), transparent 40%); }
+.travel-hero-inner { position: relative; z-index: 1; padding: 58px 22px 66px; }
 .travel-hero-inner h1 { color: #fff; font-size: clamp(26px, 3.6vw, 40px); letter-spacing: 2px;
   text-shadow: 0 3px 18px rgba(0,0,0,.5); margin-bottom: 10px; }
 .travel-hero-inner .sub { color: rgba(255,255,255,.85); font-size: 15px; letter-spacing: 1px; }
@@ -642,12 +641,12 @@ body[data-page="travel"] .sidebar .author-top { position: relative; z-index: 2; 
   .upload-fab { right: 16px; bottom: 86px; padding: 10px 18px; font-size: 14px; }
   .album-head { margin-top: 26px; }
   .album-panel { padding: 24px 18px 28px; border-radius: 20px; margin: 18px 0 36px; }
-  .travel-hero-inner { padding: 44px 22px 48px; }
+  .travel-hero-inner { padding: 30px 22px 40px; }
   .tsec { padding: 22px 20px; }
   .tsec-media { grid-template-columns: 1fr; }
   .info-mini { grid-template-columns: repeat(2, 1fr); gap: 14px; }
   .sidebar .author-top { margin-top: 0; }
-  .page-banner-inner { padding: 32px 22px 42px; }
+  .page-banner-inner { padding: 30px 22px 40px; }
   /* 记录时间线手机端回单列 */
   .timeline { max-width: 760px; padding-left: 40px; }
   .timeline::before { left: 13px; transform: none; }
